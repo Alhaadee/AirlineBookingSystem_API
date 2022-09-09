@@ -41,8 +41,8 @@ public class FlightController {
         return new ResponseEntity<>(savedFlight,HttpStatus.CREATED);
     }
 
-    @PatchMapping(value = "/{id}")
-    public ResponseEntity<Flight> addPassengerToFlight(@PathVariable long flightId,@RequestBody long passengerId){
+    @PatchMapping(value = "/{flightId}")
+    public ResponseEntity<Flight> addPassengerToFlight(@PathVariable long flightId,@RequestParam long passengerId){
         Flight flight = flightService.addPassengerToFlight(flightId,passengerId);
         return new ResponseEntity<>(flight,HttpStatus.OK);
     }
