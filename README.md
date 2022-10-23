@@ -5,7 +5,7 @@ An API created to manage fictional flights and passengers in a booking system.
 ## Setup
 
 * Create a postgresql database called: `airline_lab`
-* Add your Postgres Username and Password to the application Properties directory
+* Add your Postgres Username and Password to the `application Properties` file
 * Run the Application and send requests through Postman
 
 
